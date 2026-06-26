@@ -1,0 +1,102 @@
+
+
+@font-face {
+    font-family: "Cursed-timer-ulil";
+    src: url(/Users/jenni/Downloads/Scrim-s04k019/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin: 0;
+    /*background-color: #1B244A;*/
+    background: linear-gradient(360deg, rgb(0 0 0 / 80%) 0%, rgb(76 84 121) 50%, rgba(27, 36, 74, 1) 100%);
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3 {
+    font-family: Verdana, sans-serif;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+#home-score, #guest-score {
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-family: 'Cursed-timer-ulil';
+    color: #F94F6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+
+.home-points-container, .guest-points-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.home-points-container div, .guest-points-container div {
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-family: 'Cursed-timer-ulil';
+    color: #9AABD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newgame {
+    width: fit-content;
+    margin: 40px auto 0;
+    padding: 12px 24px;
+    background: #F94F6D;
+    font-family: Verdana, sans-serif;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+#newgame:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.leading {
+    border: 2px solid #F94F6D!important;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
